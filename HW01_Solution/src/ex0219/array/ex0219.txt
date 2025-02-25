@@ -1,0 +1,8 @@
+1,2차원배열
+객체타입 배열 저장 
+setXxx, getXxx - private 은닉 
+---------------------------------------
+과제 
+Student.java를 완성!
+TwoDmArrayExam.java  완성
+  : 어러우면 교재중심으로 공부하기!

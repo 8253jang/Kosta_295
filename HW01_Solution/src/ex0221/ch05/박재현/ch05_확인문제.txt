@@ -1,0 +1,30 @@
+1번. 4 (참조 타입은 null값으로 초기화할 수 있다)
+2번. 3 (참조되지 않는 객체는 gc에 의해 자동으로 해제된다)
+3번. 2 (String 타입은 참조 타입이므로 == 연산자로 비교할 수 없다.)
+4번. 2
+5번. 3 (boolean 타입의 기본 초기값은 false이다)
+6번.
+3
+5
+
+
+7번.
+int max=0;
+for(int i=0;i<array.length;i++){
+if(max<array[i])
+max=array[i];
+}
+
+System.out.println(max);
+
+8번.
+
+int arrLength = 0;
+int total =0;
+for(int i=0; i<array[].length;i++){
+for(int j=0;j<array[i][].length(j++){
+total+=array[i][j];
+}arrLength+=array[i].length();
+}
+System.out.println (total);
+System.out.println (total/arrLength);

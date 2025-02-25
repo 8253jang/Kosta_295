@@ -1,0 +1,28 @@
+2장
+1) 4
+2) 2, 3, 6, 7
+3) byte, short, char, int, long, float, double, boolean
+4) 타입 : int, double / 변수이름 : age, price / 리터럴 : 10, 3.14
+5) 3
+6) 4
+7) 3
+8) 3
+9) 1
+10) 2
+11) 13, 16
+
+3장
+1) 31
+2) 가
+3) pencils / students, pencils % students
+4) value / 100 * 100
+
+5) 1, 2, 3, 4
+
+6) true
+false
+
+
+7) Double.isNaN(z)
+
+

@@ -1,0 +1,117 @@
+6장 연습문제
+
+1번. 3 (하나의 클래스로 여러개의 객체를 생성할 수 있다)
+2번. 4
+3번. 4
+4번. 3
+5번. 1
+6번. 4 (중복 선언할 경우 오버로딩으로 작동한다)
+7번. 2 (리턴타입이 같더라도 파라미터 수가 다르면 오버로딩으로 동작한다)
+8번. 2
+9번. 2 (static final은 생성자에서 초기화할 수 없다 반드시 필드에서 초기화해야 한다)
+10번. 4 (import package에서 소속 패키지명을 변경해주어야 동작한다)
+11번. 3 (패키지 내에서 접근을 허가한다)
+12번. 필드, 생성자, 메소드
+
+13번.
+public class Member{
+public String name;
+public String id;
+public String password;
+public int age;
+
+// getter, setter 생략
+}
+
+14번.
+public class Member{
+public String name;
+public String id;
+public String password;
+public int age;
+
+Member(String name, String id){
+this.name=name;
+this.id=id;
+}
+// getter, setter 생략
+}
+
+
+15번.
+
+boolean login (String id, String password){
+	if(id.equals("hong") && password.equals("12345"))
+		System.out.println("로그인되었습니다");
+}
+
+
+void logout(String id){
+System.out.println(id + "님이 로그아웃 되셨습니다");
+}
+
+
+16번.
+class Printer {
+	Printer() {
+	}
+
+	public void println(int value1) {
+		System.out.println(value1);
+	}
+
+	public void println(boolean value1) {
+		System.out.println(value1);
+	}
+
+	public void println(double value1) {
+		System.out.println(value1);
+	}
+
+	public void println(int value1, boolean value2, double value3, String value4) {
+		System.out.println(Integer.toString(value1) + Boolean.toString(value2) + Double.toString(value3) + value4);
+	}
+
+}
+
+17번.
+class Printer {
+	private Printer printer = new Printer();
+
+	private Printer() {
+	}
+
+	private static Printer getInstance() {
+		return printer;
+	}
+
+	public static void println(int value1) {
+		System.out.println(value1);
+	}
+
+	public static void println(boolean value1) {
+		System.out.println(value1);
+	}
+
+	public static void println(double value1) {
+		System.out.println(value1);
+	}
+
+	public static void println(int value1, boolean value2, double value3, String value4) {
+		System.out.println(Integer.toString(value1) + Boolean.toString(value2) + Double.toString(value3) + value4);
+	}
+
+}
+
+18번.
+class ShopService {
+	private ShopService shopService = new ShopService();
+
+	ShopService() {
+	}
+
+	public static ShopService getInstance() {
+		return shopService;
+	}
+
+}
