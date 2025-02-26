@@ -1,0 +1,22 @@
+ch7 연습문제
+1) 1
+2) 2
+3) 1
+4) 4
+5) 2
+6) Child 클래스 생성자 첫번째 줄에서 super() 호출이 자동 삽입되는데
+Parent 클래스에 기본생성자가 정의 되어 있지 않아서 에러 발생
+=> 해결 : Child 클래스 생성자 첫번째 줄에 super(name); 삽입한다.
+7)
+Parent(String nation) call
+Parent() call 
+Child(String name) call
+Child() call
+8) 
+스노우타이어가 굴러갑니다.
+스노우타이어가 굴러갑니다.
+9) 2
+10) abstract 클래스를 상속하면 abstract 메소드를 구현하거나 
+아니면 abstract 제한자를 클래스명 앞에 붙여야 한다.
+11) super
+12) a instanceof C c
