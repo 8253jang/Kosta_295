@@ -10,17 +10,17 @@ public class FileInputOutExam {
     	FileOutputStream fos =null;
     	try {
 	    	//byte단위로 파일 읽기 - InputStream --> FileInputStream
-	    	//fis = new FileInputStream("src/ex0305/test.txt");
-    		fis = new FileInputStream("src/ex0305/FileExam.java");
+	    	fis = new FileInputStream("src/ex0305/test.txt");
+    		//fis = new FileInputStream("src/ex0305/FileExam.java");
 	    	
-	    	/*int i=0;
+	    	int i=0;
 	    	while(( i = fis.read())!= -1) {
 		    	//1byte씩 읽기
 		    	System.out.println("i = " + i +", " + (char)i);
-	    	}*/
+	    	}
 	    	
 	    	///////////////////////////////////////////
-	    	int length = fis.available();//읽어들일수있는 byte수를 리턴
+	    	/*int length = fis.available();//읽어들일수있는 byte수를 리턴
 	    	System.out.println("length = " + length);
 	    	
 	    	byte b [] = new byte [length];
@@ -29,7 +29,7 @@ public class FileInputOutExam {
 	    	
 	    	//byte []을 String으로 변환
 	    	String data = new String(b);//
-	    	System.out.println("data = " + data);
+	    	System.out.println("data = " + data);*/
 	    	
 	    	////byte단위 파일저장//////////////////////////////////
 	    	//fos = new FileOutputStream("src/ex0305/write.txt");
