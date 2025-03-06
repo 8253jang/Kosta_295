@@ -44,7 +44,7 @@ public class MenuView{
 				   controller.selectSortByPrice();
 				   break;
 			   case "9" : 
-				   //controlloer -> service 가서 파일에 list를 저장한다.
+				   controller.saveObject();  
                  System.exit(0);
 			   default:
 				   System.out.println("메뉴를 다시 선택해주세요!!!!");
@@ -110,7 +110,6 @@ public class MenuView{
   public void inputDelete(){
      System.out.print("삭제 할 전자제품 모델번호는? ");
       int modelNo = Integer.parseInt(sc.nextLine());
-      
 		controller.deleteModelNo(modelNo);
 
  

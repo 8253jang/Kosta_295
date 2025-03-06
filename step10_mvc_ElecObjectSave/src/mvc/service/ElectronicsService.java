@@ -69,26 +69,13 @@ public interface ElectronicsService {
      */
     public List<Electronics> selectSortByPrice() ;
     
-    
     /**
      * 종료를 선택하면 종료하기전에 마지막 list를 정보를
      * save.txt파일에 저장한다.  
      * */
-    public void saveObject()throws Exception;
+    public void saveObject() throws Exception ;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
