@@ -21,8 +21,11 @@ import mvc.view.SuccessView;
  */
 
 public class ElectronicsController {
-    private ElectronicsService service = ElectronicsServiceImpl.getInstance();
+    private ElectronicsService service;
 
+    public ElectronicsController() {
+    	service = ElectronicsServiceImpl.getInstance();
+    }
     /**
      * 전체검색
      */
@@ -109,6 +112,7 @@ public class ElectronicsController {
 	public void saveObject() {
 		try {
 		  service.saveObject();
+		  
 		  SuccessView.printMessage("파일에 저장완료했습니다.\n다음에 또 이용해주세요");
 		}catch (Exception e) {
 			FailView.errorMessage(e.getMessage());

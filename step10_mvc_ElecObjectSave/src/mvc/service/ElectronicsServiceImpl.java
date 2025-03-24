@@ -38,15 +38,6 @@ public class ElectronicsServiceImpl implements ElectronicsService {
      * 
      */
     private ElectronicsServiceImpl() {
-    	//save.txt문서가 존재하는지 체크한후
-    	//없으면 ResourceBundle를 이용해서 
-    	//list에 데이터를 저장한다.
-    	//만약 있으면 save.txt에 있는 파일을
-    	//로딩해서 list를 복원한다.!!!
-    	// save,txt 문서가 존재하는지 체크한후 없으면 ResourceBundle를 이용해서 list에 데이터를 저장한다.
-    	// 만약 있으면 save.txt에 있는 파일을 로딩해서 list를 복원한다.!!
-    	
-	
 		try {
     		if(file.exists()) {
     			try(ObjectInputStream ois = 
@@ -72,6 +63,7 @@ public class ElectronicsServiceImpl implements ElectronicsService {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
+			
 		}
       
     }
